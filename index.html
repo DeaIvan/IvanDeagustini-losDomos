@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo_size.png" type="image/x-icon">
+    <title>Home | Los Domos</title>
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <!--Zona navegacion-->
+    <nav class="nav">
+        <a href="index.html">
+            <img src="images/logo_size.png" alt="logo de los domos">
+        </a>
+        
+        <div class="dropdown oculto">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="nosotros.html">Acerca de</a></li>
+              <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+              <li><a class="dropdown-item" href="ubicacion.html">Ubicacion</a></li>
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <ul class="enlaces">
+            <li><a href="nosotros.html">Acerca de</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ubicacion.html">Ubicacion</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--fin zona navegacion-->
+    <!--zona carousel-->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item foto-carousel active">
+                <img src="images\imgheader.jpg" class="d-block w-100" alt="imagen-1-fiambres">
+              </div>
+              <div class="carousel-item foto-carousel">
+                <img src="images\img-header2.jpg" class="d-block w-100" alt="imagen-2-fiambres">
+              </div>
+              <div class="carousel-item foto-carousel">
+                <img src="images\img-header3.jpg" class="d-block w-100" alt="imagen-3-fiambres">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+    <!--fin zona carousel-->
+    <main class="container">
+    
+    <!--Zona Secciones de la navegacion-->
+        <!--Seccion acerca-de-->
+        <section id="acerca-de">
+            <h3 class="wow slideInRight titulo" data-wow-duration="2s">Nosotros</h3>
+            <article>
+                <div>
+                    <img src="images/img-nosotros.jpg" alt="imagen-nuestro-trabajo">
+                </div>
+                <div class="texto-descr">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorem asperiores esse earum aliquam, expedita magni itaque libero ex ipsa quis nihil reiciendis natus, ipsum repudiandae quaerat debitis alias accusamus!
+                    Cupiditate ipsum officia expedita magnam, hic dolores tenetur. Ea ex eos, voluptatibus reiciendis rem praesentium qui saepe. Cumque reprehenderit commodi, at architecto aperiam delectus. Voluptatem et error exercitationem repellendus! Aliquam!
+                    Eius, accusantium minus esse molestiae labore molestias nisi ipsum quos culpa consequuntur libero quo natus explicabo commodi minima dolores ullam voluptatibus unde aliquid sint vitae a. Repudiandae distinctio facilis ex?
+                    </span>
+                </div>
+            </article>
+        </section>
+
+        <!--Seccion de productos-->
+            <section class="productos">
+                <h3 class="titulo">Productos</h3>
+                <div class="galeria-port">
+                    <div id="area1">
+                        <div class="imagen-port">
+                            <img src="images\jamon-cocido.jpg" alt="producto-1">
+                                <div class="hover-galeria">
+                                    <a href="productos.html">
+                                        <p>Jamon Cocido</p>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="area2">
+                        <div class="imagen-port">
+                            <img src="images\pastron.jpg" alt="producto-2">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Pastron</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="area3">
+                        <div class="imagen-port">
+                            <img src="images\panceta.jpg" alt="producto-3">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Panceta</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="area4">
+                        <div class="imagen-port">
+                            <img src="images\longaniza.jpg" alt="producto-4">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Longaniza</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="area5">
+                        <div class="imagen-port">
+                            <img src="images\cantimpalo.jpg" alt="producto-5">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Cantimpalo</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="area6">
+                        <div class="imagen-port">
+                            <img src="images\salame-baston.jpg" alt="producto-6">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Salame Bastón</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="area7">
+                        <div class="imagen-port">
+                            <img src="images\mozzarella.jpg" alt="producto-7">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Mozzarella</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="area8">
+                        <div class="imagen-port">
+                            <img src="images\queso-fresco.jpg" alt="producto-8">
+                            <div class="hover-galeria">
+                                <a href="productos.html">
+                                    <p>Queso Fresco</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--Seccion de ubicacion-->
+        <section id="ubicacion">
+            <h3 class="titulo">Dónde estamos?</h3>
+            <article>    
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6549.704859673926!2d-58.89003554933583!3d-34.83480266412019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slos%20domos!5e0!3m2!1ses-419!2sar!4v1656251078693!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="ubi"> 
+                    <p class="text-ubi"> 
+                        <i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius beatae iure porro nulla nihil cum incidunt! Corporis, laboriosam, similique veniam sint dolorum porro voluptatum quisquam perspiciatis ipsum accusantium eveniet voluptates?
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!--Fin zona secciones de navegacion-->
+
+    <!--Zona footer-->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>8296312</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">Developed by Ivan Deagustini</h2>
+    </footer>
+    <!--Fin footer-->
+    <!--cdns-->
+    <script src="/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    <script defer src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
