@@ -1,6 +1,7 @@
-const navToggle = document.querySelector(".nav__toggle");
-const navMenu = document.querySelector(".enlaces");
+const fadeOut = () => {
+    const loaderWrapper = 
+    document.querySelector('.carga');
+    loaderWrapper.classList.add('fade');
+}
 
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle(".enlaces__visible")
-});
+window.addEventListener('load', fadeOut);
