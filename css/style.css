@@ -315,17 +315,17 @@ footer {
 .nosotros{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 1rem;
     align-items: center;
     margin-bottom: 10%;
 }
 
 .imagen{
-    width: 25vw;
-    height: 50vh;
+    width: 30vw;
+    height: 70vh;
     border-radius: 1rem;
     object-fit: cover;
-    transition: all 1s;
+    transition: all .5s;
 }
 
 .imagen:hover{
@@ -338,6 +338,22 @@ footer {
     height: auto;
     margin-left: 5rem;
     font-size: 1.8rem;
+}
+
+.texto-nosotros h6{
+    font-size: 1.8rem;
+}
+
+.bg-propio{
+    background-color: #735751;
+}
+
+.progress .porc{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-content: center;
+    margin-bottom: 0;
 }
 
 
@@ -363,6 +379,30 @@ footer {
     color: #735751;
     font-size: 1.6rem;
 }
+
+
+/*pagina de ubicacion*/
+#ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.cards-size{
+    width: 50vw;
+    height: 50vh;
+}
+
+.cards-size iframe{
+    width: 50vw;
+    height: 50vh;
+}
+
+.info-ubi{
+    font-size: 1.8rem;
+}
+
 
 /*pagina de contacto*/
 .header-contacto{
@@ -441,6 +481,30 @@ main form{
     align-items: center;
 }
 
+.alert-contact{
+    width: 40rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 45%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 40rem;
+    }
+  }
+
 .info{
     margin: 25px;
     transition: all 1s;
@@ -500,6 +564,28 @@ main form{
 #wp {
     color:#008502; 
 }
+
+
+
+@media only screen and (max-width: 992px){
+    .nosotros{
+        flex-wrap: wrap;
+    }
+
+    .imagen{
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .texto-nosotros{
+        width: 90vw;
+        height: auto;
+        font-size: 1.8rem;
+        padding: 1rem;
+        margin-left: 0;
+    }
+}
+
 
 /*mobile*/
 @media only screen and (max-width: 768px){
@@ -623,6 +709,21 @@ main form{
     .mapa{
         margin-top: 5rem;
         height: auto;
+    }
+
+    
+    .cards-size{
+        width: 90vw;
+        height: 60vh;
+    }
+    
+    .cards-size iframe{
+        width: 90vw;
+        height: 60vh;
+    }
+    
+    .info-ubi{
+        font-size: 1.6rem;
     }
 
     iframe{
