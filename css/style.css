@@ -584,6 +584,8 @@ main form{
         padding: 1rem;
         margin-left: 0;
     }
+
+    
 }
 
 
@@ -802,6 +804,30 @@ main form{
         align-items: center;
         text-align: center;
     }
+
+    .alert-contact{
+        width: 80vw;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+        from {
+          margin-left: 50%;
+          width: 60vw;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 80vw;
+        }
+      }
     
     .info{
         margin: 25px;
