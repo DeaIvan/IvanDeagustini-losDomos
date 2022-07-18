@@ -64,9 +64,11 @@ nav a img{
     list-style: none;
 }
 
+
 nav ul li{
     margin-left: 5rem;
 }
+
 
 nav ul li a{
     text-decoration: none;
@@ -101,12 +103,12 @@ header{
 }
 
 .foto-carousel{
-    height: 50vh;
+    height: 85vh;
 }
 
 .foto-carousel img{
     object-fit: cover;
-    height: 50vh;
+    height: 85vh;
 }
 
 /*acerca de*/
@@ -142,6 +144,7 @@ main #acerca-de article div img:hover{
     width: 450px;
     padding: 2rem;
 }
+
 
 /*productos*/
 
@@ -611,6 +614,8 @@ main form{
         margin-left: 0rem;
     }
 
+    
+
     .dropdown-toggle::after {
         display: none;
     }
@@ -624,7 +629,8 @@ main form{
         margin-right: 2rem;
         border: none;
     }
-    
+
+
     nav a img{
         margin-right: 0;
         margin-left: 2rem;
@@ -635,6 +641,15 @@ main form{
         color: white;
         font-size: 1.8rem;
         text-transform: uppercase;
+    }
+
+    .foto-carousel{
+        height: 50vh;
+    }
+    
+    .foto-carousel img{
+        object-fit: cover;
+        height: 50vh;
     }
     
     .titulo{
