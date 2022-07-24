@@ -1,0 +1,168 @@
+/*pagina de contacto*/
+.header-contacto{
+    height: 0%;
+}
+
+.titulo-h1{
+    margin-top: 5%;
+    font-size: $titleSize;
+    padding-bottom: 20px;
+    border-bottom: 3px solid $primaryColor;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px $secondaryColor;
+}
+
+main {
+    .contacto{
+        display: $flexible;
+        justify-content: space-evenly;
+        margin-top: 10%;
+        align-items: $centrado;
+    }
+}
+
+main {
+    form{
+        display: $flexible;
+        flex-direction: column;
+        justify-content: $centrado;
+        padding: 60px;
+        background-color: #A78A7F15;
+        margin-bottom: 10rem;
+    }
+}
+
+.labels{
+    text-align: $centrado;
+    padding: 5px;
+    color: $primaryColor;
+    font-size: $littleSize;
+}
+
+.inputs{
+    border: 1px solid#73575144;
+    background-color: $primaryColor;
+    color: $blanco;
+    font-size: 1.7rem;
+}
+
+.no-resizable{
+    resize: none;
+}
+
+.botones{
+    margin-top: 20px;
+    text-align: $centrado;
+    font-size: $littleSize;
+}
+
+.botones {
+    input{
+        border: 1px solid $primaryColor;
+        background-color: $primaryColor;
+        color: $blanco;
+        padding: 6px;
+        transition: all .3s;
+        &:hover{
+            border: 1px solid $terciaryColor;
+            background-color: $terciaryColor;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
+
+.datos-contacto{
+    display: $flexible;
+    justify-content: $centrado;
+    flex-direction: column;
+    align-items: $centrado;
+}
+
+.alert-contact{
+    width: 40rem;
+    height: 8rem;
+    display: $flexible;
+    align-items: $centrado;
+    justify-content: $centrado;
+    font-size: 2rem;
+    font-weight: $negrita;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 45%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 40rem;
+    }
+  }
+
+.info{
+    margin: 25px;
+    transition: all 1s;
+    &:hover{
+        transform: translateX(2rem);
+        cursor: pointer;
+    }
+}
+
+
+.icon{
+    font-size: 3rem;
+    padding: 5px;
+}
+
+.info-t{
+    font-size: 2.5rem;
+}
+
+.social{
+    width: 200px;
+    display: $flexible;
+    padding: 10px;
+    border-radius: 10px;
+    background: $terciaryColor;
+}
+
+.social {
+    a{
+        width: 25%;
+        font-size: 2rem;
+        height: 5vh;
+        display: $flexible;
+        justify-content: $centrado;
+        align-items: $centrado;
+        cursor: pointer;
+        text-decoration: $oculto;
+        border-radius: 5px;
+        background: rgb(218, 202, 202);
+        margin: 10px;
+        transition: 0.4s;
+        box-shadow: rgb(107, 94, 94)
+                        3px 3px 6px 0px,
+                        rgb(120, 100, 100)
+                        -3px -3px 6px 1px;
+        &:hover{      
+            transform: translateY(-10px);
+        }
+    }
+}                   
+
+
+#ig {
+    color:$colorInstagram; 
+}
+#face {
+    color:$colorFacebook; 
+}
+#wp {
+    color:$colorWhatsapp; 
+}

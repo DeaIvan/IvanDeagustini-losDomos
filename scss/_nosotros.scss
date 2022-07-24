@@ -1,0 +1,50 @@
+/*pagina de nosotros*/
+.nosotros{
+    display: $flexible;
+    justify-content: $centrado;
+    margin-top: 1rem;
+    align-items: $centrado;
+    margin-bottom: 10%;
+}
+
+.imagen{
+    width: 30vw;
+    height: 70vh;
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.imagen{
+    &:hover{
+        transform: scale(1.03,1.03);
+        cursor: pointer;
+    }
+}
+
+.texto-nosotros{
+    width: 25vw;
+    height: $auto;
+    margin-left: 5rem;
+    font-size: $mediumSize;
+}
+
+.texto-nosotros {
+    h6{
+        font-size: $mediumSize;
+    }
+}
+
+.bg-propio{
+    background-color: $primaryColor;
+}
+
+.progress {
+    .porc{
+        display: $flexible;
+        justify-content: $centrado;
+        font-size: 1.5rem;
+        align-content: $centrado;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,23 @@
+/*pagina de ubicacion*/
+.ubicacion {
+    display: $flexible;
+    justify-content: $centrado;
+    align-items: $centrado;
+    margin-bottom: 10rem;
+}
+
+.cards-size{
+    width: $ancho_MediaPantalla;
+    height: $alto_MediaPantalla;
+}
+
+.cards-size {
+    iframe{
+        width: $ancho_MediaPantalla;
+        height: $alto_MediaPantalla;
+    }
+}
+
+.info-ubi{
+    font-size: $mediumSize;
+}

@@ -1,0 +1,22 @@
+/*pagina de productos*/
+.prod{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.subtitulo{
+    margin-top: 35px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px $secondaryColor;
+    color: #00000074;
+}
+
+.buton-acc{
+    color: $secondaryColor;
+    font-size: $littleSize;
+}
+
+.body-acc{
+    color: $secondaryColor;
+    font-size: $littleSize;
+}
