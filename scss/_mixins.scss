@@ -1,0 +1,44 @@
+@mixin d-flex($justify,$align){
+    justify-content: $justify;
+    align-items: $align;
+}
+//@include d-flex(center,center);
+
+@mixin medias($breakpoint){
+    @if $breakpoint == grande{
+        @media only screen and (max-width: 992px){
+            @content;
+        }
+    }
+    @if $breakpoint == mediano{
+        @media only screen and (max-width: 768px){
+            @content;
+        }
+    }
+    @if $breakpoint == pequeño{
+        @media only screen and (max-width: 420px){
+            @content;
+        }
+    }
+}
+//@include medias(grande);
+
+$paleta:(
+    'colorPrimario':#735751,
+    'colorSecundario':#A78A7F,
+    'colorTerciario':#c1a59f,
+    'colorInstagram':#de4c52,
+    'colorFacebook':#13a0f9,
+    'colorWhatsapp':#008502,
+    'colorBlanco':#fff,
+    'colorResaltado':#421222,
+    'colorNav':#ffffff4b,
+    );
+//map-get($map:$paleta,$key:'colorPrimario')
+
+$text:(
+    'tamanioTitulos':6rem,
+    'tamanioChico':1.6rem,
+    'tamanioMediano':1.8rem,
+);
+//map-get($map:$text,$key:'tamanioTitulos')

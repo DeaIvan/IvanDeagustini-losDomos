@@ -1,8 +1,7 @@
 /*pagina de ubicacion*/
 .ubicacion {
     display: $flexible;
-    justify-content: $centrado;
-    align-items: $centrado;
+    @include d-flex(center,center);
     margin-bottom: 10rem;
 }
 
@@ -19,5 +18,5 @@
 }
 
 .info-ubi{
-    font-size: $mediumSize;
+    font-size: map-get($map:$text,$key:'tamanioMediano');
 }

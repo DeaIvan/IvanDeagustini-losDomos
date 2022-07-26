@@ -1,6 +1,6 @@
 /*media queries*/
 
-@media only screen and (max-width: 992px){
+@include medias(grande){
     .nosotros{
         flex-wrap: wrap;
     }
@@ -13,17 +13,15 @@
     .texto-nosotros{
         width: 90vw;
         height: $auto;
-        font-size: $mediumSize;
+        font-size: map-get($map:$text,$key:'tamanioMediano');
         padding: 1rem;
         margin-left: 0;
     }
-
-    
 }
 
 
 /*mobile*/
-@media only screen and (max-width: 768px){
+@include medias(mediano){
 
     .contenedor-footer{
         flex-wrap: wrap;
@@ -35,7 +33,7 @@
         align-items: $centrado;
         padding-top: 0px;
         padding-bottom: 0px;
-        background-color: $blanco;
+        background-color: map-get($map:$paleta,$key:'colorBlanco');
         position: absolute;
         width: $w-100; 
     }
@@ -82,8 +80,8 @@
             li{
                 a{
                     text-decoration: $oculto;
-                    color: $blanco;
-                    font-size: $mediumSize;
+                    color: map-get($map:$paleta,$key:'colorBlanco');
+                    font-size: map-get($map:$text,$key:'tamanioMediano');
                     text-transform: uppercase;
                 }
             }
@@ -176,13 +174,13 @@
     }
     
     .fa-solid{
-        color: $secondaryColor;
+        color: map-get($map:$paleta,$key:'colorSecundario');
         font-size: 4rem;
     }
     
     .text-ubi{
         padding: 20px;
-        font-size: $mediumSize;
+        font-size: map-get($map:$text,$key:'tamanioMediano');
     }
     
     .mapa{
@@ -204,7 +202,7 @@
     }
     
     .info-ubi{
-        font-size: $littleSize;
+        font-size: map-get($map:$text,$key:'tamanioChico');
     }
 
     iframe{
@@ -228,7 +226,7 @@
     .texto-nosotros{
         width: 90vw;
         height: $auto;
-        font-size: $mediumSize;
+        font-size: map-get($map:$text,$key:'tamanioMediano');
         padding: 1rem;
         margin-left: 0;
     }
@@ -258,14 +256,14 @@
     .labels{
         text-align: $centrado;
         padding: 5px;
-        color: $primaryColor;
-        font-size: $littleSize;
+        color: map-get($map:$paleta,$key:'colorPrimario');
+        font-size: map-get($map:$text,$key:'tamanioChico');
     }
     
     .inputs{
         border: 1px solid#73575144;
-        background-color: $primaryColor;
-        color: $blanco;
+        background-color: map-get($map:$paleta,$key:'colorPrimario');
+        color: map-get($map:$paleta,$key:'colorBlanco');
         font-size: 1.7rem;
         width: 99%;
     }
@@ -273,16 +271,15 @@
     .botones{
         margin-top: 20px;
         text-align: $centrado;
-        font-size: $littleSize;
+        font-size: map-get($map:$text,$key:'tamanioChico');
     }
     
     .datos-contacto{
         margin: 3rem;
         padding: 3rem;
         display: $flexible;
-        justify-content: $centrado;
+        @include d-flex(center,center);
         flex-direction: column;
-        align-items: $centrado;
         text-align: $centrado;
     }
 
@@ -290,8 +287,7 @@
         width: 80vw;
         height: 8rem;
         display: $flexible;
-        align-items: $centrado;
-        justify-content: $centrado;
+        @include d-flex(center,center);
         font-size: 2rem;
         font-weight: $negrita;
         animation-duration: 3s;
@@ -328,7 +324,7 @@
         display: $flexible;
         padding: 10px;
         border-radius: 10px;
-        background: $terciaryColor;
+        background: map-get($map:$paleta,$key:'colorTerciario');
     }
     
     .social {
@@ -337,8 +333,7 @@
             font-size: 2rem;
             height: 5vh;
             display: $flexible;
-            justify-content: $centrado;
-            align-items: $centrado;
+            @include d-flex(center,center);
             cursor: pointer;
             text-decoration: $oculto;
             border-radius: 5px;
@@ -356,7 +351,7 @@
     }                   
 }
 
-@media only screen and (max-width: 420px){
+    @include medias(pequeño){
 
     .galeria-port{
         display: grid;

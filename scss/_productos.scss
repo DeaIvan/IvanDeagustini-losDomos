@@ -7,16 +7,16 @@
 .subtitulo{
     margin-top: 35px;
     font-size: 3rem;
-    text-shadow: 2px 2px 5px $secondaryColor;
+    text-shadow: 2px 2px 5px map-get($map:$paleta,$key:'colorSecundario');
     color: #00000074;
 }
 
 .buton-acc{
-    color: $secondaryColor;
-    font-size: $littleSize;
+    color: map-get($map:$paleta,$key:'colorSecundario');
+    font-size: map-get($map:$text,$key:'tamanioChico');
 }
 
 .body-acc{
-    color: $secondaryColor;
-    font-size: $littleSize;
+    color: map-get($map:$paleta,$key:'colorSecundario');
+    font-size: map-get($map:$text,$key:'tamanioChico');
 }

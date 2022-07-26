@@ -16,21 +16,20 @@ html{
 }
 
 span{
-    font-size: 1.8rem;
+    font-size: map-get($map:$text,$key:'tamanioMediano');
 }
 
 /*navegacion*/
 .nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: $flexible;
+    @include d-flex(center,center);
     flex-direction: row;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: $navColor;
+    background-color: map-get($map:$paleta,$key:'colorNav');
     box-shadow: 0px 0px 10px #000000 ;
     position: absolute;
-    width: 100%; 
+    width: $w-100; 
 }
 
 .oculto{
@@ -48,7 +47,7 @@ nav {
 
 .enlaces{
     display: $flexible;
-    list-style: none;
+    list-style: $oculto;
 }
 
 
@@ -64,16 +63,16 @@ nav {
     ul{
         li{
             a{
-                text-decoration: none;
-                color: $primaryColor;
-                font-size: 1.8rem;
+                text-decoration: $oculto;
+                color: map-get($map:$paleta,$key:'colorPrimario');
+                font-size: map-get($map:$text,$key:'tamanioMediano');
                 background-image: linear-gradient(currentColor, currentColor);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 1px;
                 transition: all .3s;
                 &:hover{
-                    color: $boldColor;
+                    color: map-get($map:$paleta,$key:'colorResaltado');
                     cursor: pointer;
                     background-size: 100% 1px;
                     letter-spacing: 2px;
@@ -85,7 +84,7 @@ nav {
 }
 
 .active{
-    color: $primaryColor;
+    color: map-get($map:$paleta,$key:'colorPrimario');
 }
 
 /*header*/
@@ -109,17 +108,17 @@ header{
 /*acerca de*/
 .titulo{
     margin-top: 100px;
-    font-size: $titleSize;
+    font-size: map-get($map:$text,$key:'tamanioTitulos');
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px $secondaryColor;
-    border-top: 4px solid $secondaryColor;
+    text-shadow: 1px 1px 10px map-get($map:$paleta,$key:'colorSecundario');
+    border-top: 4px solid map-get($map:$paleta,$key:'colorSecundario');
 }
 
 main {
     #acerca-de{
         article{
-            display: flex;
-            justify-content: center;
+            display: $flexible;
+            justify-content: $centrado;
             flex-wrap: wrap;
         }
     } 
@@ -130,8 +129,8 @@ main {
         article{
             div{
                 img{
-                    width: 50vh;
-                    height: 50vh;
+                    width: 50rem;
+                    height: $alto_MediaPantalla;
                     padding: 2vh;
                     border-radius: 3rem;
                     object-fit: cover;
@@ -160,7 +159,7 @@ main {
     align-items: stretch;
     justify-content: $centrado;
     grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: auto;
+    grid-template-rows: $auto;
     margin-top: 5rem;
     grid-template-areas: 
     "area1 area2 area3 area4"
@@ -222,8 +221,7 @@ main {
     background: #73575180;
     transition: transform .5s;
     display: $flexible;
-    justify-content: $centrado;
-    align-items: $centrado;
+    @include d-flex(center,center);
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -236,13 +234,13 @@ main {
 
 .hover-galeria {
     a{
-        text-decoration: none;
+        text-decoration: $oculto;
     }   
 }
 
 .hover-galeria {
     p{
-        color: #fff;
+        color: map-get($map:$paleta,$key:'colorBlanco');
         font-size: 1.8rem;
     }
 }
@@ -267,13 +265,13 @@ section {
 }
 
 .fa-solid{
-    color: $secondaryColor;
+    color: map-get($map:$paleta,$key:'colorSecundario');
     font-size: 4rem;
 }
 
 .text-ubi{
     padding: 20px;
-    font-size: $mediumSize;
+    font-size: map-get($map:$text,$key:'tamanioMediano');
 }
 
 .text-ubi {
@@ -285,18 +283,17 @@ section {
 
 .mapa{
     display: $flexible;
-    justify-content: $centrado;
-    align-items: $centrado;
+    @include d-flex(center,center);
     margin-top: 50px;
 }
 
 iframe{
-    border-radius: 1rem;
+    border-radius: .375rem;
 }
 
 /*footer*/
 footer {
-    background: $primaryColor;
+    background: map-get($map:$paleta,$key:'colorPrimario');
     padding: 60px 0 30px 0;
     margin: $auto;
     overflow: hidden;
@@ -309,25 +306,25 @@ footer {
     justify-content: space-evenly;
     margin: $auto;
     padding-bottom: 50px;
-    border-bottom: 1px solid $secondaryColor;
+    border-bottom: 1px solid map-get($map:$paleta,$key:'colorSecundario');
 }
 
 .content-foo {
-    text-align: center;
+    text-align: $centrado;
 }
 .content-foo {
     h4{
-        color: $secondaryColor;
-        border-bottom: 3px solid $secondaryColor;
+        color: map-get($map:$paleta,$key:'colorSecundario');
+        border-bottom: 3px solid map-get($map:$paleta,$key:'colorSecundario');
         padding-bottom: 5px;
         margin-bottom: 10px;
-        font-size: $mediumSize;
+        font-size: map-get($map:$text,$key:'tamanioMediano');
     }
 }
 .content-foo {
     p{
-        color: $blanco;
-        font-size: $littleSize;
+        color: map-get($map:$paleta,$key:'colorBlanco');
+        font-size: map-get($map:$text,$key:'tamanioChico');
     }
 }
 
@@ -336,5 +333,5 @@ footer {
     text-align: $centrado;
     font-size: 1.5rem;
     margin: 20px 0 0 0;
-    color: $secondaryColor;
+    color: map-get($map:$paleta,$key:'colorSecundario');
 }

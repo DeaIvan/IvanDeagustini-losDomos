@@ -1,9 +1,8 @@
 /*pagina de nosotros*/
 .nosotros{
     display: $flexible;
-    justify-content: $centrado;
+    @include d-flex(center,center);
     margin-top: 1rem;
-    align-items: $centrado;
     margin-bottom: 10%;
 }
 
@@ -26,25 +25,24 @@
     width: 25vw;
     height: $auto;
     margin-left: 5rem;
-    font-size: $mediumSize;
+    font-size: map-get($map:$text,$key:'tamanioMediano');
 }
 
 .texto-nosotros {
     h6{
-        font-size: $mediumSize;
+        font-size: map-get($map:$text,$key:'tamanioMediano');
     }
 }
 
 .bg-propio{
-    background-color: $primaryColor;
+    background-color: map-get($map:$paleta,$key:'colorPrimario');
 }
 
 .progress {
     .porc{
         display: $flexible;
-        justify-content: $centrado;
+        @include d-flex(center,center);
         font-size: 1.5rem;
-        align-content: $centrado;
         margin-bottom: 0;
     }
 }
