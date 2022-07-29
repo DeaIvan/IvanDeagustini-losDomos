@@ -103,7 +103,7 @@ main #acerca-de article {
   flex-wrap: wrap;
 }
 
-main #acerca-de article div img {
+main #acerca-de article figure img {
   width: 50rem;
   height: 50vh;
   padding: 2vh;
@@ -111,7 +111,7 @@ main #acerca-de article div img {
   object-fit: cover;
   transition: all 1s;
 }
-main #acerca-de article div img:hover {
+main #acerca-de article figure img:hover {
   transform: scale(1.03, 1.03);
   cursor: pointer;
 }
@@ -521,6 +521,12 @@ main form {
 }
 .social a:hover {
   transform: translateY(-10px);
+}
+
+.icon-svg, #wp, #face, #ig {
+  width: 50%;
+  height: auto;
+  color: #fff;
 }
 
 #ig {

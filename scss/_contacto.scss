@@ -151,15 +151,24 @@ main {
             transform: translateY(-10px);
         }
     }
-}                   
+}
+
+.icon-svg{
+    width: 50%;
+    height: auto;
+    color: map-get($map:$paleta,$key:'colorBlanco')
+}
 
 
 #ig {
+    @extend .icon-svg;
     color:map-get($map:$paleta,$key:'colorInstagram'); 
 }
 #face {
+    @extend .icon-svg;
     color:map-get($map:$paleta,$key:'colorFacebook'); 
 }
 #wp {
+    @extend .icon-svg;
     color:map-get($map:$paleta,$key:'colorWhatsapp'); 
 }

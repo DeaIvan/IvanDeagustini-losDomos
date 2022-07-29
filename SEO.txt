@@ -1,0 +1,27 @@
+En mi proyecto sume el SEO con las siguientes caracteristicas:
+
+Descripcion: 
+Mediante la etiqueta meta name description agregue el siguiente parrafo que explica en pocas palabras el contenido de mi sitio:
+- Index: "Los Domos, empresa de chacinados 100% caseros. Atrevete a probar nuestros fiambres 100% hechos a mano, sin conservantes, colorantes u otros agregados."
+- Nosotros: "Los Domos - Empresa de chacinados 100% caseros - Conocenos un poco mas!"
+- Productos: "Los Domos - Elaboraciones propias 100% caseras, probalas!"
+- Ubicacion: "Los Domos - Empresa de chacinados 100% caseros ubicada en Marcos Paz, Buenos Aires."
+- Contacto: "Los Domos - Contactanos para quedarte!"
+
+Palabras Clave: 
+Mediante la etiqueta meta name keywords, agregue las palabras clave que acompañaran a cada una de las paginas de mi sitio:
+- Index: "FIAMBRES, JAMON, QUESOS, EMBUTIDOS, ENCURTIDOS, MARCOS PAZ, BUENOS AIRES, ARGENTINA, PRODUCTOS"
+- Nosotros: "NOSOTROS, MARCOS PAZ, BUENOS AIRES, ARGENTINA, QUIENES SOMOS?"
+- Productos: "FIAMBRES, JAMON, QUESOS, EMBUTIDOS, ENCURTIDOS, LONGANIZA, CANTIMPALO"
+- Ubicacion: "MARCOS PAZ, BUENOS AIRES, ARGENTINA, UBICACION, DIRECCION"
+- Contacto: "MARCOS PAZ, BUENOS AIRES, ARGENTINA, UBICACION, DIRECCION, TELEFONO, REDES, MAIL"
+
+Imagenes:
+Para las paginas que contenian imagenes lo que hice fue optimizarlas en cuanto a dimensiones y de esa manera logre reducir notablemente el peso de cada una (entre 25 y 100px maximo)
+
+Iconos:
+Logre optimizar el SEO de mi pagina reemplazando algunos iconos por svg.
+
+Copyright:
+Mediante las etiquetas meta name author y meta name copyright inclui mi nombre y apellido para poder evitar la falsificacion y el duplicado de mi pagina.
+

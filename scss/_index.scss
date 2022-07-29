@@ -36,6 +36,8 @@ span{
     display: $oculto;
 }
 
+
+
 nav {
     a{
         img{
@@ -99,10 +101,10 @@ header{
 }
 
 .foto-carousel {
-                img{
-                    object-fit: cover;
-                    height: 85vh;
-                }
+    img{
+        object-fit: cover;
+        height: 85vh;
+    }
 }
 
 /*acerca de*/
@@ -127,7 +129,7 @@ main {
 main {
     #acerca-de{
         article{
-            div{
+            figure{
                 img{
                     width: 50rem;
                     height: $alto_MediaPantalla;
@@ -151,8 +153,6 @@ main {
 }
 
 /*productos*/
-
-
 .galeria-port{
     display: $grilla;
     gap: 1.5rem;
