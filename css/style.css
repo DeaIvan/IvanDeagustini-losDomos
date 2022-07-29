@@ -611,7 +611,7 @@ main form {
     font-size: 3rem;
     text-align: center;
   }
-  main #acerca-de article div img {
+  main #acerca-de article figure img {
     width: 90vw;
     height: 40vh;
     padding: 2vh;
