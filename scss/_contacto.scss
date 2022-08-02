@@ -89,6 +89,8 @@ main {
     font-weight: $negrita;
     animation-duration: 3s;
     animation-name: slidein;
+    background: map-get($map:$paleta,$key:'colorTerciario');
+    color: map-get($map:$paleta,$key:'colorBlanco');
 }
 
 @keyframes slidein {

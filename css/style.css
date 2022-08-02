@@ -466,6 +466,8 @@ main form {
   font-weight: bold;
   animation-duration: 3s;
   animation-name: slidein;
+  background: #c1a59f;
+  color: #fff;
 }
 
 @keyframes slidein {
