@@ -276,7 +276,6 @@
     
     .datos-contacto{
         margin: 3rem;
-        padding: 3rem;
         display: $flexible;
         @include d-flex(center,center);
         flex-direction: column;
